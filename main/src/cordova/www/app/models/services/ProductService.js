@@ -1,6 +1,6 @@
 'use strict';
 
-app.service('AlbumFullService', function($http, API_URL){
+app.service('ProductService', function($http, API_URL){
 
 	/**
 	  * Get album by ID
@@ -26,11 +26,12 @@ app.service('AlbumFullService', function($http, API_URL){
 	  *				 size	: number of elements per page / -1 all
 	  * @return HttpPromise
 	  */
-	function getAll(data){
+	function getAll(){
+		
 		return $http({
 			method	: 'GET',
-			url 	: API_URL + '/albumfull',
-			params	: data,
+			url 	: API_URL + 'produit',
+			headers: {'key': 'dragonteam'},
 			cache	: true
 		});
 	}
