@@ -1301,3 +1301,16 @@ body {
 .map iframe{
 	height:150px;
 }
+
+.ocarousel_slider{
+	border:3px groove #78ab4e;
+}
+
+
+.last_product{
+	display:inline-block;
+}
+
+.best_product{
+	display: inline-block;
+}

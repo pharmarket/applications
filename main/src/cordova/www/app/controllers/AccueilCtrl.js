@@ -1,14 +1,15 @@
 'use strict';
 
-app.controller('AccueilCtrl', function($scope, API_URL, ProductService){
+app.controller('AccueilCtrl', function($scope, API_URL, ProductHomeService){
 
     console.log('AccueilCtrl ok');
 
-    $scope.produits = ProductService.getAll().success(
+    $scope.produits = ProductHomeService.getAll().success(
     	function(data){
     		console.log(data);
 
     		var prod = data;
     		$scope.produits = prod;
     	});
+
 });
