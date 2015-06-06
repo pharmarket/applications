@@ -8,6 +8,11 @@ app.config(function($routeProvider){
 		controller 	: 'AccueilCtrl'
 	})
 
+	.when('/cgu', {
+		templateUrl : 'app/views/partials/cgu.html',
+		controller 	: 'CguCtrl'
+	})
+
 	.otherwise({
 		redirectTo : '/'
 	})

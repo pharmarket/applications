@@ -1,0 +1,10 @@
+<h1>CGU</h1>
+
+<div ng-repeat="cond in cgu">
+
+	<div ng-init="title = cond.title"></div>
+	<div ng-init="cgu = cond.cgu"></div>
+
+	<div ng-bind-html="title | html"></div>
+	<div ng-bind-html="cgu | html"></div>
+</div>

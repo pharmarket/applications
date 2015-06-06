@@ -5,7 +5,8 @@
 var app = angular.module('app', [
     'ngRoute',
     'filter.truncate',
-    'filter.ucFirst'
+    'filter.ucFirst',
+    'filter.html',
     ]);
 
 /**
