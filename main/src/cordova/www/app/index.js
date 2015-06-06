@@ -4,6 +4,7 @@
 // Chargement de l'application (l'application est créée)
 var app = angular.module('app', [
     'ngRoute',
+	'ngMessages',
     'filter.truncate',
     'filter.ucFirst',
     'filter.html',

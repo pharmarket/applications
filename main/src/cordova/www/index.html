@@ -351,8 +351,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="wrap">
 								<div class="content-bottom-left">	
 									<div class="buters-guide">
-										<!--h3 style="font weight: bold;">Le produit</h3-->
-										ICI Se générera les différentes autres pages lors d'un appuye sur un BUTTON
 										<!-- Affiche les templates des controllers (si on utilise le module ngRoute) -->
 										<div ng-view></div>
 									</div>
@@ -438,7 +436,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li><a href="#">Forum</a>|</li>
 				<li><a href="#">Qui est pharmarket</a>|</li>
 				<li><a href="#">Charte Qualité</a>|</li>
-				<li><a href="#">Contact</a>|</li>
+				<li><a href="#/contact">Contact</a>|</li>
 				<li><a href="#/cgu">CGU</a>|</li>
 				<li><a href="#/cgv">CGV</a>|</li>
 				<li><a href="#">FAQ</a>|</li>
@@ -492,6 +490,7 @@ $(document).ready(function() {
 <script type="text/javascript" src="app/controllers/ModuleBestProductsCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/CguCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/CgvCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/ContactCtrl.js"></script>
 
 
 <!-- service -->
@@ -499,6 +498,7 @@ $(document).ready(function() {
 <script type="text/javascript" src="app/models/services/ProductHomeService.js"></script>
 <script type="text/javascript" src="app/models/services/CguService.js"></script>
 <script type="text/javascript" src="app/models/services/CgvService.js"></script>
+<script type="text/javascript" src="app/models/services/ContactService.js"></script>
 
 <!-- filter -->
 <script type="text/javascript" src="app/shared/filters/truncate.js"></script>

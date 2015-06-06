@@ -18,6 +18,11 @@ app.config(function($routeProvider){
 		controller 	: 'CgvCtrl'
 	})
 
+	.when('/contact', {
+		templateUrl : 'app/views/partials/contact.html',
+		controller 	: 'ContactCtrl'
+	})
+
 	.otherwise({
 		redirectTo : '/'
 	})

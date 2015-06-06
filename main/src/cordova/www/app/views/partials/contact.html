@@ -1,0 +1,135 @@
+<form 
+  name="form"
+  ng-submit="submit(); submitted=true"
+  novalidate=
+>
+    <h3>Nous Contactez</h3>
+
+    <!-- Affichage du message d'info -->
+	<div id="result"></div>
+
+    <div 
+        class="form-group"
+        ng-class="{'has-error':form.mail.$invalid && submitted}"
+    >
+        <label for="email">Email address</label><br />
+        <input 
+          id="mail" 
+          name="mail" 
+          ng-model="mail"
+          ng-model-option="{updateOn:Blur}"
+          type="email"
+          class="form-control" 
+          placeholder="Enter mail"
+          required
+        >
+
+		<div 
+            ng-show="submitted"
+            ng-messages="form.mail.$error"
+            ng-messages-include="app/views/messages/errorEmail.html"
+        ></div>
+
+    </div>
+
+
+
+
+
+
+    <div 
+        class="form-group"
+        ng-class="{'has-error':form.message.$invalid && submitted}"
+    >
+        <label for="message">message</label><br />
+        <textarea 
+          rows="4"
+          cols="25"
+          id="message" 
+          name="message" 
+          ng-model="message"
+          ng-model-option="{updateOn:Blur}"
+          class="form-control" 
+          placeholder="Enter message"
+          required
+        >
+        Enter message
+    	</textarea>
+
+        <div 
+            ng-show="submitted"
+            ng-messages="form.message.$error"
+            ng-messages-include="app/views/messages/errorDefault.html"
+        ></div>
+
+    </div>
+
+
+
+
+
+
+
+    <div 
+        class="form-group"
+        ng-class="{'has-error':form.sujet.$invalid && submitted}"
+    >
+        <label for="sujet">sujet</label><br />
+        <input 
+          id="sujet" 
+          name="sujet" 
+          ng-model="sujet"
+          ng-model-option="{updateOn:Blur}"
+          type="text"
+          class="form-control" 
+          placeholder="Enter sujet"
+          required
+        >
+
+        <div 
+            ng-show="submitted"
+            ng-messages="form.sujet.$error"
+            ng-messages-include="app/views/messages/errorDefault.html"
+        ></div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div 
+        class="form-group"
+        ng-class="{'has-error':form.nom.$invalid && submitted}"
+    >
+        <label for="nom">nom</label><br />
+        <input 
+          id="nom" 
+          name="nom"
+          ng-model="nom" 
+          ng-model-option="{updateOn:Blur}"
+          type="text"
+          class="form-control" 
+          placeholder="Enter nom"
+          required
+        >
+
+        <div 
+            ng-show="submitted"
+            ng-messages="form.nom.$error"
+            ng-messages-include="app/views/messages/errorDefault.html"
+        ></div>
+
+    </div>
+
+
+
+
+
+
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
