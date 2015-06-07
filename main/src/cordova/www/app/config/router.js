@@ -33,6 +33,11 @@ app.config(function($routeProvider){
 		controller 	: 'CharteCtrl'
 	})
 
+	.when('/faq', {
+		templateUrl : 'app/views/partials/faq.html',
+		controller 	: 'FaqCtrl'
+	})
+
 	.otherwise({
 		redirectTo : '/'
 	})
