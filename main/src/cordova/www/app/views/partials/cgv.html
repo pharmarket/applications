@@ -1,10 +1,8 @@
-<h3>CGV</h3>
-
 <div ng-repeat="cond in cgv">
 
 	<div ng-init="title = cond.title"></div>
 	<div ng-init="cgv = cond.cgv"></div>
 
-	<div ng-bind-html="title | html"></div>
+	<h3><div ng-bind-html="title | html"></div></h3>
 	<div ng-bind-html="cgv | html"></div>
 </div>
