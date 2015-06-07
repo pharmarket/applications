@@ -23,6 +23,11 @@ app.config(function($routeProvider){
 		controller 	: 'ContactCtrl'
 	})
 
+	.when('/whoPharmarket', {
+		templateUrl : 'app/views/partials/whoPharmarket.html',
+		controller 	: 'WhoPharmarketCtrl'
+	})
+
 	.otherwise({
 		redirectTo : '/'
 	})
