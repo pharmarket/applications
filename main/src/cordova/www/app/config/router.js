@@ -28,6 +28,11 @@ app.config(function($routeProvider){
 		controller 	: 'WhoPharmarketCtrl'
 	})
 
+	.when('/charte', {
+		templateUrl : 'app/views/partials/charte.html',
+		controller 	: 'CharteCtrl'
+	})
+
 	.otherwise({
 		redirectTo : '/'
 	})

@@ -1,0 +1,8 @@
+<div ng-repeat="cond in charte">
+
+	<div ng-init="title = cond.title"></div>
+	<div ng-init="description = cond.description"></div>
+
+	<h3><div ng-bind-html="title | html"></div></h3>
+	<div ng-bind-html="description | html"></div>
+</div>
