@@ -578,6 +578,12 @@ body {
 	font-size:22px;
 	color:#323A45;
 }
+
+.add-descr{
+	display: inline-block;
+	float:right;
+}
+
 .add-cart{
 	display: inline-block;
 }

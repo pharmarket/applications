@@ -1,0 +1,26 @@
+<div class="content-bottom-right">
+    <h3>Les produits</h3>
+    <div ng-repeat="row in produit" class="section group">
+        
+        <div class="grid_1_of_2 img_1_of_2">
+            <h4><a href="#/produit/{{row.id}}">{{row.info[0].nom}}</a></h4>
+            <a href="#/produit/{{row.id}}"><img src="http://local.dev/site/public/{{row.media[0].chemin}}" height="200" width="200" alt="" /></a>
+            <div class="price-details">
+                
+                <div class="price-number">
+                    <p><span class="rupees">${{row.montant}}</span></p>
+                </div>
+
+                <div class="add-descr">                              
+                    <h4><span>{{row.info[0].description}}</span></h4>
+                </div>
+                
+                <div class="add-cart">                              
+                    <h4><a href="#">More Info</a></h4>
+                </div>
+                
+                <div class="clear"></div>
+            </div>                   
+        </div>
+        <hr>
+</div>

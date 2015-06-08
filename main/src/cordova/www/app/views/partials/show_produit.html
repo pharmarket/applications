@@ -1,0 +1,214 @@
+<style>
+/*********************************************
+    			Call Bootstrap
+*********************************************/
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+/*********************************************
+        		Theme Elements
+*********************************************/
+
+.gold{
+	color: #FFBF00;
+}
+
+/*********************************************
+					PRODUCTS
+*********************************************/
+
+.product{
+	border: 5px solid #78AB4E;
+	height: 250px;
+	width: 250px;
+}
+
+.product>img{
+	max-width: 250px;
+}
+
+.product-rating{
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+.product-title{
+	font-size: 20px;
+}
+
+.product-desc{
+	font-size: 14px;
+}
+
+.product-price{
+	font-size: 22px;
+}
+
+.product-stock{
+	color: #74DF00;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.product-info{
+		margin-top: 50px;
+}
+
+/*********************************************
+					VIEW
+*********************************************/
+
+.content-wrapper {
+	max-width: 1140px;
+	background: #fff;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	border: 0px;
+	border-radius: 0px;
+}
+
+.container-fluid{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.view-wrapper {
+	float: right;
+	max-width: 70%;
+	margin-top: 25px;
+}
+
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+	max-width: 100%;
+}
+
+/*********************************************
+				ITEM 
+*********************************************/
+
+.service1-items {
+	padding: 0px 0 0px 0;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	height: 321px;
+	width: 130px;
+}
+
+.service1-item {
+	height: 107px;
+	width: 120px;
+	display: block;
+	float: left;
+	position: relative;
+	padding-right: 20px;
+	border-right: 1px solid #DDD;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+}
+
+.service1-item > img {
+	max-height: 110px;
+	max-width: 110px;
+	opacity: 0.6;
+	transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+}
+
+.service1-item > img:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+.service-image-left {
+	padding-right: 50px;
+}
+
+.service-image-right {
+	padding-left: 50px;
+}
+
+.service-image-left > center > img,.service-image-right > center > img{
+	max-height: 155px;
+}
+
+</style>
+
+
+
+
+
+<div class="container-fluid">
+    <div class="content-wrapper" dir-loader="show">	
+		<div class="item-container">	
+			<div class="container">	
+				<div class="col-md-12">
+					<div class="product col-md-3 service-image-left">
+                    
+						<center>
+							<img id="item-display" src="http://local.dev/site/public/{{show.media[0].chemin}}" height="300" width="300" alt=""></img>
+						</center>
+					</div>
+					
+					<div class="container service1-items col-sm-2 col-md-2 pull-left">
+						<center>
+							<h3 style="font-size=0.7em;">Les images</h3>
+								<div ng-if="show.media.type == image" ng-repeat="img in show.media">
+									<a id="{{img.id}}" class="service1-item">
+										<img src="http://local.dev/site/public/{{img.chemin}}" alt=""></img>
+									</a>
+								</div>
+						</center>
+					</div>
+
+					<div class="container service1-items col-sm-2 col-md-2 pull-left">
+						<center>
+							<h3 style="font-size=0.7em;">Les vidéos</h3>
+								<div ng-if="show.media.type == video" ng-repeat="img in show.media">
+									<a id="{{img.id}}" class="service1-item">
+										
+										<iframe width="200" height="150" src="{{img.chemin}}" contenteditable="false" frameborder="0" allowfullscreen></iframe>
+
+									</a>
+								</div>
+						</center>
+					</div>
+				</div>
+					
+				<div class="col-md-7">
+					<div class="product-title">{{show.info[0].nom}}</div>
+					<div class="product-price">$ {{show.montant}}</div>
+					<div class="product-stock">In Stock</div>
+					<div class="product-desc">{{show.info[0].description}}</div>
+					
+					<div class="product-rating"><i class="fa fa-star gold">Fournisseur : {{show.fournisseurs[0].siret}}</i> <i class="fa fa-star gold">Marque : {{show.marque.nom}}</i> <i class="fa fa-star gold">Categorie : {{show.categorie.nom}}</i> <i class="fa fa-star gold">sous catégorie : {{show.sous_categorie.nom}}</i> <i class="fa fa-star-o">Reference du produit : {{show.reference}}</i> </div>
+					<p style="font-size:0.7em">Crée le {{show.created_at}}</p>
+					<p style="font-size:0.7em">Produit mise à jour le {{show.updated_at}}</p>
+					<hr>
+
+					Paiement :<br />
+					Logo <br />
+					Livraison : <br />
+					logo <br />
+
+					<hr>
+
+					<div class="btn-group cart">
+						<button type="button" class="btn btn-success">
+							Add to cart 
+						</button>
+					</div>
+					<div class="btn-group wishlist">
+						<a type="button" class="btn btn-info" href="#">Notice</a>
+					</div>
+				</div>
+			</div> 
+		</div>
+		<hr>
+		Commentaire sur produit
+		<hr>

@@ -38,6 +38,37 @@ app.config(function($routeProvider){
 		controller 	: 'FaqCtrl'
 	})
 
+	.when('/produit', {
+		templateUrl : 'app/views/partials/produit.html',
+		controller  : 'ProduitCtrl'
+	})
+
+	.when('/produit/:id', {
+		templateUrl : 'app/views/partials/show_produit.html',
+		controller  : 'Show_ProduitCtrl' 
+	})
+
+
+
+
+
+
+	.when('/categ', {
+		templateUrl : 'app/views/partials/categ.html',
+		controller  : 'ProduitCtrl'
+	})
+
+	/*.when('/categ/:id', {
+		templateUrl : 'app/views/partials/produit.html',
+		controller  : 'ProduitCtrl'
+	})*/
+
+
+
+
+
+
+
 	.otherwise({
 		redirectTo : '/'
 	})
