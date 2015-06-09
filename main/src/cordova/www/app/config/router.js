@@ -58,6 +58,12 @@ app.config(function($routeProvider){
 
 
 
+	
+
+
+
+
+
 
 	.when('/categ', {
 		templateUrl : 'app/views/partials/categ.html',
