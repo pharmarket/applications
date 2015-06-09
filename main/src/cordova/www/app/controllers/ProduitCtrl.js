@@ -2,7 +2,7 @@
 
 app.controller('ProduitCtrl', function($scope, API_URL, ProduitService){
 
-    console.log('CguCtrl ok');
+    console.log('ProduitCtrl ok');
 
     $scope.produit = ProduitService.getAll().success(
     	function(data){

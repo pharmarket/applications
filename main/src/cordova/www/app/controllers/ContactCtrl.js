@@ -19,6 +19,12 @@ app.controller('ContactCtrl', function($scope, API_URL, ContactService){
 
 		ContactService.create(param).success(function(data){
 			console.log(data);
+
+			
+			console.log(data.contact);
+
+
+
 			if(data.contact){
 				$('#result').empty();
 				$('#result').append('<p>Votre message à bien été enregistré</p>');

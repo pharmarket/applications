@@ -151,7 +151,7 @@
 					<div class="product col-md-3 service-image-left">
                     
 						<center>
-							<img id="item-display" src="http://local.dev/site/public/{{show.media[0].chemin}}" height="300" width="300" alt=""></img>
+							<img id="item-display" src="http://localhost/site/public/{{show.media[0].chemin}}" height="300" width="300" alt=""></img>
 						</center>
 					</div>
 					
@@ -160,7 +160,7 @@
 							<h3 style="font-size=0.7em;">Les images</h3>
 								<div ng-if="show.media.type == image" ng-repeat="img in show.media">
 									<a id="{{img.id}}" class="service1-item">
-										<img src="http://local.dev/site/public/{{img.chemin}}" alt=""></img>
+										<img src="http://localhost/site/public/{{img.chemin}}" alt=""></img>
 									</a>
 								</div>
 						</center>
@@ -186,7 +186,7 @@
 					<div class="product-stock">In Stock</div>
 					<div class="product-desc">{{show.info[0].description}}</div>
 					
-					<div class="product-rating"><i class="fa fa-star gold">Fournisseur : {{show.fournisseurs[0].siret}}</i> <i class="fa fa-star gold">Marque : {{show.marque.nom}}</i> <i class="fa fa-star gold">Categorie : {{show.categorie.nom}}</i> <i class="fa fa-star gold">sous catégorie : {{show.sous_categorie.nom}}</i> <i class="fa fa-star-o">Reference du produit : {{show.reference}}</i> </div>
+					<div class="product-rating"><i class=""><br />{{show.fournisseurs[0].siret}}</i> <i class=""><br />{{show.marque.nom}}</i> <i class=""><br />Categorie/sous catégorie : {{show.categorie.nom}}</i> <i class=""><br />{{show.sous_categorie.nom}}</i> <i class=""><br />Reference : {{show.reference}}</i> </div>
 					<p style="font-size:0.7em">Crée le {{show.created_at}}</p>
 					<p style="font-size:0.7em">Produit mise à jour le {{show.updated_at}}</p>
 					<hr>
@@ -206,9 +206,14 @@
 					<div class="btn-group wishlist">
 						<a type="button" class="btn btn-info" href="#">Notice</a>
 					</div>
+
+					<div class="btn-group wishlist">
+						<a type="button" class="btn btn-info" href="#/commentaire">Commentaire</a>
+					</div>
+
+
 				</div>
 			</div> 
 		</div>
-		<hr>
-		Commentaire sur produit
+
 		<hr>

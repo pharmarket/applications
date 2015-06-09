@@ -312,7 +312,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										
 										<div ng-if="lastProducts.length > 0" ng-repeat="lp in lastProducts" class="last_product">
 											<p><strong>{{lp.nom}}</strong></p>
-											<img src="http://local.dev/site/public/{{lp.chemin}}" height="70" width="70" alt="" />
+											<img src="http://localhost/site/public/{{lp.chemin}}" height="70" width="70" alt="" />
 											<p><strong>{{lp.description}}</strong></p>
 										</div>
 										
@@ -339,7 +339,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 										<div ng-if="bestProducts.length > 0" ng-repeat="bp in bestProducts" class="best_product">
 											<p><strong>{{bp.nom}}</strong></p>
-											<img src="http://local.dev/site/public/{{bp.chemin}}" height="70" width="70" alt="" />
+											<img src="http://localhost/site/public/{{bp.chemin}}" height="70" width="70" alt="" />
 											<p><strong>{{bp.description}}</strong></p>
 										</div>
 
@@ -505,6 +505,7 @@ $(document).ready(function() {
 <script type="text/javascript" src="app/controllers/FaqCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/ProduitCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/Show_ProduitCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/Comment_ProduitCtrl.js"></script>
 
 
 <!-- service -->
@@ -517,6 +518,7 @@ $(document).ready(function() {
 <script type="text/javascript" src="app/models/services/CharteService.js"></script>
 <script type="text/javascript" src="app/models/services/FaqService.js"></script>
 <script type="text/javascript" src="app/models/services/ProduitService.js"></script>
+<script type="text/javascript" src="app/models/services/CommentService.js"></script>
 
 <!-- filter -->
 <script type="text/javascript" src="app/shared/filters/truncate.js"></script>

@@ -49,6 +49,12 @@ app.config(function($routeProvider){
 	})
 
 
+	.when('/commentaire', {
+		templateUrl : 'app/views/partials/commentaire.html',
+		controller  : 'Comment_ProduitCtrl'
+	})
+
+
 
 
 

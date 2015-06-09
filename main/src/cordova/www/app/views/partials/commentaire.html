@@ -1,0 +1,139 @@
+<form 
+name="form"
+ng-submit="submit(); submitted=true"
+novalidate=
+>
+<h3>Ajouter un commentaire</h3>
+
+<!-- Affichage du message d'info -->
+<div id="result"></div>
+
+
+		<!--input 
+		id="produit_id" 
+		name="produit_id" 
+		ng-model="produit_id"
+		ng-model-option="{updateOn:Blur}"
+		type="text"
+		class="form-control" 
+		placeholder="{{show.id}}"
+		required
+	-->
+
+
+
+
+
+
+
+	<div 
+	class="form-group"
+	ng-class="{'has-error':form.nom.$invalid && submitted}"
+	>
+	<label for="email">Nom</label><br />
+	<input 
+	id="nom" 
+	name="nom"
+	ng-model="nom"
+	ng-model-option="{updateOn:Blur}"
+	type="text"
+	class="form-control" 
+	placeholder="Enter nom"
+	required
+	>
+
+	<div 
+	ng-show="submitted"
+	ng-messages="form.nom.$error"
+	ng-messages-include="app/views/messages/errorDefault.html"
+	></div>
+
+</div>
+
+
+
+
+
+
+<div 
+class="form-group"
+ng-class="{'has-error':form.note.$invalid && submitted}"
+>
+<label for="email">note</label><br />
+
+<select 
+id="note" 
+name="note" 
+ng-model="note"
+ng-model-option="{updateOn:Blur}"
+class="form-control"
+required
+>
+
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+
+</select>
+
+<div 
+ng-show="submitted"
+ng-messages="form.note.$error"
+ng-messages-include="app/views/messages/errorDefault.html"
+></div>
+
+</div>
+
+
+
+
+
+
+
+
+<div 
+class="form-group"
+ng-class="{'has-error':form.description.$invalid && submitted}"
+>
+<label for="description">description</label><br />
+<textarea 
+rows="4"
+cols="25"
+id="description" 
+name="description" 
+ng-model="description"
+ng-model-option="{updateOn:Blur}"
+class="form-control" 
+placeholder="Enter description"
+required
+>
+Enter description
+</textarea>
+
+<div 
+ng-show="submitted"
+ng-messages="form.description.$error"
+ng-messages-include="app/views/messages/errorDefault.html"
+></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
