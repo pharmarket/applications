@@ -151,7 +151,7 @@
 					<div class="product col-md-3 service-image-left">
                     
 						<center>
-							<img id="item-display" src="http://localhost/site/public/{{show.media[0].chemin}}" height="300" width="300" alt=""></img>
+							<img id="item-display" ng-src="http://localhost/site/public/{{show.media[0].chemin}}" height="300" width="300" alt=""></img>
 						</center>
 					</div>
 					
@@ -160,7 +160,7 @@
 							<h3 style="font-size=0.7em;">Les images</h3>
 								<div ng-if="show.media.type == image" ng-repeat="img in show.media">
 									<a id="{{img.id}}" class="service1-item">
-										<img src="http://localhost/site/public/{{img.chemin}}" alt=""></img>
+										<img ng-src="http://localhost/site/public/{{img.chemin}}" alt=""></img>
 									</a>
 								</div>
 						</center>
@@ -172,7 +172,7 @@
 								<div ng-if="show.media.type == video" ng-repeat="img in show.media">
 									<a id="{{img.id}}" class="service1-item">
 										
-										<iframe width="200" height="150" src="{{img.chemin}}" contenteditable="false" frameborder="0" allowfullscreen></iframe>
+										<iframe width="200" height="150" ng-src="{{img.chemin}}" contenteditable="false" frameborder="0" allowfullscreen></iframe>
 
 									</a>
 								</div>
@@ -208,7 +208,7 @@
 					</div>
 
 					<div class="btn-group wishlist">
-						<a type="button" class="btn btn-info" href="#/commentaire">Commentaire</a>
+						<a type="button" class="btn btn-info" href="#/produit/{{show.id}}/commentaire">Commentaire</a>
 					</div>
 
 

@@ -13,6 +13,18 @@ var app = angular.module('app', [
 /**
   * Constantes, configuration server(webservice)
   */
-
 /******* METTRE L ADRESSE FINAL DU SITE POUR MA PART J AI MIS LOCAL.DEV LE MODIFIER PAS SON LOCAL *******/
 app.constant('API_URL', 'http://local.dev/site/public/ws/');
+
+
+
+// Config Whitelist URL
+app.config(function($sceDelegateProvider) {
+    $sceDelegateProvider.resourceUrlWhitelist([
+        'self',
+        'http://localhost/**',
+        '*://www.youtube.com/**',
+        'http://www.youtube.com/embed/**',
+        'https://www.youtube.com/embed/**'
+    ]);
+});

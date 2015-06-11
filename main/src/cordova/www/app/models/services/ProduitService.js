@@ -12,7 +12,7 @@ app.service('ProduitService', function($http, API_URL){
 			method 	: 'GET',
 			url 	: API_URL + 'produit/' + id,
 			headers: {'key': 'dragonteam'},
-			cache	: false 
+			cache	: true 
 		});
 	}
 
