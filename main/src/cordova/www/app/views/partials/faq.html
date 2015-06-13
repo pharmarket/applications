@@ -5,7 +5,11 @@
 	<div ng-init="answer = cond.answer"></div>
 	<div ng-init="created_at = cond.created_at"></div>
 
-	<h2><div ng-bind-html="question | html"></div></h2>
-	<div ng-bind-html="answer | html"></div>
-	<div style="font-size: 0.7em;" ng-bind-html="created_at | html"></div>
+	<div ng-if="cond.langue_id == 1">
+
+		<h2><div ng-bind-html="question | html"></div></h2>
+		<div ng-bind-html="answer | html"></div>
+		<div style="font-size: 0.7em;" ng-bind-html="created_at | html"></div>
+
+	</div>
 </div>

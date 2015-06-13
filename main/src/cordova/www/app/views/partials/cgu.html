@@ -3,6 +3,10 @@
 	<div ng-init="title = cond.title"></div>
 	<div ng-init="cgu = cond.cgu"></div>
 
-	<h3><div ng-bind-html="title | html"></div></h3>
-	<div ng-bind-html="cgu | html"></div>
+	<div ng-if="cond.langue_id == 1">
+		
+		<h3><div ng-bind-html="title | html"></div></h3>
+		<div ng-bind-html="cgu | html"></div>
+
+	</div>
 </div>

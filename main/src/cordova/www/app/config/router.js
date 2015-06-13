@@ -38,6 +38,20 @@ app.config(function($routeProvider){
 		controller 	: 'FaqCtrl'
 	})
 
+
+	.when('/commentaire/list/:id', {
+		templateUrl : 'app/views/partials/list_commentaire.html',
+		controller  : 'List_Comment_ProduitCtrl'
+	})
+
+
+	.when('/commentaire/:id', {
+		templateUrl : 'app/views/partials/commentaire.html',
+		controller  : 'Comment_ProduitCtrl'
+	})
+
+
+
 	.when('/produit', {
 		templateUrl : 'app/views/partials/produit.html',
 		controller  : 'ProduitCtrl'
@@ -47,12 +61,9 @@ app.config(function($routeProvider){
 		templateUrl : 'app/views/partials/show_produit.html',
 		controller  : 'Show_ProduitCtrl' 
 	})
+	
 
 
-	.when('/produit/:id/commentaire', {
-		templateUrl : 'app/views/partials/commentaire.html',
-		controller  : 'Comment_ProduitCtrl'
-	})
 
 
 

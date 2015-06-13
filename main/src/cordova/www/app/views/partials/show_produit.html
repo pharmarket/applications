@@ -191,12 +191,6 @@
 					<p style="font-size:0.7em">Produit mise à jour le {{show.updated_at}}</p>
 					<hr>
 
-					Paiement :<br />
-					Logo <br />
-					Livraison : <br />
-					logo <br />
-
-					<hr>
 
 					<div class="btn-group cart">
 						<button type="button" class="btn btn-success">
@@ -208,7 +202,9 @@
 					</div>
 
 					<div class="btn-group wishlist">
-						<a type="button" class="btn btn-info" href="#/produit/{{show.id}}/commentaire">Commentaire</a>
+						<a type="button" class="btn btn-info" ng-href="#/commentaire/{{show.id}}">Ajout d'un commentaire</a>
+
+						<a type="button" class="btn btn-info" ng-href="#/commentaire/list/{{show.id}}">Les commentaires</a>
 					</div>
 
 

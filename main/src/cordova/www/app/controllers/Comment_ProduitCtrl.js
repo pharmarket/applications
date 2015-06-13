@@ -3,11 +3,13 @@
 app.controller('Comment_ProduitCtrl', function($scope, API_URL, CommentService){
 	console.log('Comment_ProduitCtrl OK');
 
+	
+
 	$scope.submit = function(){
 		var param = {
 			data : {
-				"user_id": 11,
-				"produit_id": 106,
+				"user_id": $scope.user_id,
+				"produit_id": $scope.produit_id,
 				"nom": $scope.nom,
 				"description": $scope.description,
 				"note": $scope.note,
@@ -17,7 +19,7 @@ app.controller('Comment_ProduitCtrl', function($scope, API_URL, CommentService){
 
 		CommentService.create(param).success(function(data){
 			console.log(data);
-			if(data.comment){
+			if(data.commentaire){
 				$('#result').empty();
 				$('#result').append('<p>Votre commentaire à bien été enregistré</p>');
 			}else{
