@@ -8,12 +8,12 @@ app.controller('Comment_ProduitCtrl', function($scope, API_URL, CommentService){
 	$scope.submit = function(){
 		var param = {
 			data : {
-				"user_id": $scope.user_id,
-				"produit_id": $scope.produit_id,
+				"user_id": 11,
+				"produit_id": 162,
 				"nom": $scope.nom,
 				"description": $scope.description,
 				"note": $scope.note,
-				"done": $scope.done,
+				"done": 0,
 			}
 		};
 

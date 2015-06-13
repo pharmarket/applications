@@ -1,5 +1,3 @@
-<div ng-controller="Show_ProduitCtrl">
-
 <form 
 name="form"
 ng-submit="submit(); submitted=true"
@@ -10,17 +8,14 @@ novalidate=
 <!-- Affichage du message d'info -->
 <div id="result"></div>
 
-	
-{{show.id}}
-
 	<!-- remplissage de l'id du produit -->
-	<input type="text" name="produit_id" id="produit_id" ng-model="produit_id" ng-init="produit_id='{{show.id}}'" value="{{show.id}}" required>
+	<!--input type="hidden" name="produit_id" id="produit_id" ng-model="produit_id" ng-init="produit_id='162'" value="162" required-->
 
 	<!-- remplissage de l'id de l'utilisateur -->
-	<input type="text" name="user_id" id="user_id" ng-model="user_id" ng-init="user_id='11'" value="11" required>
+	<!--input type="hidden" name="user_id" id="user_id" ng-model="user_id" ng-init="user_id='11'" value="11" required-->
 
 	<!-- remplissage du done -->
-	<input type="text" name="done" id="done" ng-model="done" ng-init="done='0'" value="0" required>
+	<!--input type="hidden" name="done" id="done" ng-model="done" ng-init="done='0'" value="0" required-->
 
 
 
@@ -135,4 +130,3 @@ ng-messages-include="app/views/messages/errorDefault.html"
 
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-</div>
