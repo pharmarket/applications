@@ -24,12 +24,16 @@ app.config(function($routeProvider){
 	})
 
 
-
 	.when('/calcule_posologie', {
 		templateUrl : 'app/views/partials/calcul_posologie.html',
 		controller  : 'Calcul_posologieCtrl'
 	})
 
+
+	.when('/inscription', {
+		templateUrl : 'app/views/partials/inscription.html',
+		controller 	: 'InscriptionCtrl'
+	})
 
 
 
