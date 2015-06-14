@@ -23,6 +23,16 @@ app.config(function($routeProvider){
 		controller 	: 'ContactCtrl'
 	})
 
+
+
+	.when('/calcule_posologie', {
+		templateUrl : 'app/views/partials/calcul_posologie.html',
+		controller  : 'Calcul_posologieCtrl'
+	})
+
+
+
+
 	.when('/whoPharmarket', {
 		templateUrl : 'app/views/partials/whoPharmarket.html',
 		controller 	: 'WhoPharmarketCtrl'
@@ -61,6 +71,8 @@ app.config(function($routeProvider){
 		templateUrl : 'app/views/partials/show_produit.html',
 		controller  : 'Show_ProduitCtrl' 
 	})
+	
+
 	
 
 
