@@ -1,0 +1,105 @@
+<form 
+  name="form"
+  ng-submit="submit(); submitted=true"
+  novalidate=
+>
+    <h3>Inscription</h3>
+
+    <!-- Affichage du message d'info -->
+	<div id="result"></div>
+
+    <div 
+        class="form-group"
+        ng-class="{'has-error':form.mail.$invalid && submitted}"
+    >
+        <label for="email">Email address</label><br />
+        <input 
+          id="mail" 
+          name="mail" 
+          ng-model="mail"
+          ng-model-option="{updateOn:Blur}"
+          type="email"
+          class="form-control" 
+          placeholder="Enter mail"
+          required
+        >
+		<div 
+            ng-show="submitted"
+            ng-messages="form.mail.$error"
+            ng-messages-include="app/views/messages/errorEmail.html"
+        ></div>
+    </div>
+
+    <div 
+        class="form-group"
+        ng-class="{'has-error':form.pseudo.$invalid && submitted}"
+    >
+        <label for="sujet">Pseudo</label><br />
+        <input 
+          id="pseudo" 
+          name="pseudo" 
+          ng-model="pseudo"
+          ng-model-option="{updateOn:Blur}"
+          type="text"
+          class="form-control" 
+          placeholder="Enter pseudo"
+          required
+        >
+
+        <div 
+            ng-show="submitted"
+            ng-messages="form.pseudo.$error"
+            ng-messages-include="app/views/messages/errorDefault.html"
+        ></div>
+    </div>
+
+    <div 
+        class="form-group"
+        ng-class="{'has-error':form.password.$invalid && submitted}"
+    >
+        <label for="sujet">Password</label><br />
+        <input 
+          id="password" 
+          name="password" 
+          ng-model="password"
+          ng-model-option="{updateOn:Blur}"
+          type="password"
+          class="form-control" 
+          placeholder="Enter password"
+          required
+        >
+
+        <div 
+            ng-show="submitted"
+            ng-messages="form.pseudo.$error"
+            ng-messages-include="app/views/messages/errorDefault.html"
+        ></div>
+    </div>
+
+    <div 
+        class="form-group"
+        ng-class="{'has-error':form.repassword.$invalid && submitted}"
+    >
+        <label for="sujet">Confirm Password</label><br />
+        <input 
+          id="repassword" 
+          name="repassword" 
+          ng-model="repassword"
+          ng-model-option="{updateOn:Blur}"
+          type="password"
+          class="form-control" 
+          placeholder="Enter confirm password"
+          required
+        >
+
+        <div 
+            ng-show="submitted"
+            ng-messages="form.repassword.$error"
+            ng-messages-include="app/views/messages/errorDefault.html"
+        ></div>
+    </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+

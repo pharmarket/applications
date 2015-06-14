@@ -23,6 +23,11 @@ app.config(function($routeProvider){
 		controller 	: 'ContactCtrl'
 	})
 
+	.when('/inscription', {
+		templateUrl : 'app/views/partials/inscription.html',
+		controller 	: 'InscriptionCtrl'
+	})
+
 	.when('/whoPharmarket', {
 		templateUrl : 'app/views/partials/whoPharmarket.html',
 		controller 	: 'WhoPharmarketCtrl'
