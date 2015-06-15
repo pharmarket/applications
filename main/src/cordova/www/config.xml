@@ -8,5 +8,10 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    
+    <access origin="tel:*" launch-external="yes" />
+	<access origin="mailto:*" launch-external="yes" />
+    <uses-permission android:autoLink="phone" />
+    
     <access origin="*" />
 </widget>

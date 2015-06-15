@@ -81,6 +81,17 @@ app.config(function($routeProvider){
 	})
 
 
+
+
+	.when('/appel', {
+		templateUrl : 'app/views/partials/appel.html',
+		controller  : 'AppelCtrl'
+	})
+
+
+
+
+
 	.otherwise({
 		redirectTo : '/'
 	})
