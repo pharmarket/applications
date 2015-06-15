@@ -8,11 +8,10 @@ app.controller('Calcul_posologieCtrl', function($scope, API_URL, Calcul_posologi
 
 		var param = {
 			data: {
-				"langue_id": 1,
-				"mail": $scope.mail,
-				"message": $scope.message,
-				"sujet": $scope.sujet,
-				"nom": $scope.nom
+				"poid": $scope.poid,
+				"age": $scope.age,
+				"taille": $scope.taille,
+				"sexe": $scope.sexe
 			}
 
 		};
@@ -25,15 +24,14 @@ app.controller('Calcul_posologieCtrl', function($scope, API_URL, Calcul_posologi
 
 
 
-			if(data.contact){
+			if(data.countPosologie){
 				$('#result').empty();
 				$('#result').append('<p>Votre message à bien été enregistré</p>');
 			}else{
 				$('#result').empty();
-				$('#result').append('<p>adresse mail déjà utilisée<br />tous les champs doivent être remplis</p>');
+				$('#result').append('<p>tous les champs doivent être remplis</p>');
 			}
 
-			//$location.path('/');
 		});
 	}
 

@@ -44,13 +44,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<p><a href="#/login">Connection</a>
 										<a href="#/inscription">Inscription</a>
 										<a href="#">Rechercher</a>
+										<a href="#/produit">Produits</a>
 										<a href="#">0 article (panier)</a></p>
 										
 
 										<p>
 											<a href="#/calcule_posologie">Calcul Posologie</a>
 											<a href="#">Nos magazins</a>
-											<a href="#">Appel VOIP (via skype)</a></p>
+											<a href="#/categ">Catégorie/Sous-Categorie</a>
+											<a href="#">Appel à un conseiller</a></p>
 										</div>
 									</div>
 								</div>
@@ -213,25 +215,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		<div class="footer-nav">
 			<ul>
-				<li><a href="#">Connection</a>|</li>
-				<li><a href="#">Inscription</a>|</li>
-				<li><a href="#">Forum</a>|</li>
 				<li><a href="#/whoPharmarket">Qui est pharmarket</a>|</li>
 				<li><a href="#/charte">Charte Qualité</a>|</li>
 				<li><a href="#/contact">Contact</a>|</li>
 				<li><a href="#/cgu">CGU</a>|</li>
 				<li><a href="#/cgv">CGV</a>|</li>
-				<li><a href="#/faq">FAQ</a>|</li>
-				<li><a href="#/produit">Produit</a>|</li>
-				<li><a href="#/categ">Catégorie/Sous-Categorie</a>|</li>
-				<li><a href="#">Information Paiement</a></li>
+				<li><a href="#/faq">FAQ</a></li>
 			</ul>
 		</div>
 
 		<div class="copy_right">
 			<script>
 				var year = new Date();
-				document.write("<p> Copyright&copy; "+year.getFullYear()+" PHARMARKET | Powered by AngularJS | Build by Dragon Agency</p>");
+				document.write("<p> Copyright&copy; "+year.getFullYear()+" PHARMARKET | Powered by AngularJS | Build by Dragon Agency <p>version: 1.0</p></p>");
 			</script>		
 		</div>	
 	</div>
@@ -288,6 +284,7 @@ $(document).ready(function() {
 <script type="text/javascript" src="app/controllers/List_Comment_ProduitCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/Calcul_posologieCtrl.js"></script>
 <script type="text/javascript" src="app/controllers/InscriptionCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/CategorieSCtrl.js"></script>
 
 
 <!-- service -->
@@ -304,6 +301,7 @@ $(document).ready(function() {
 <script type="text/javascript" src="app/models/services/CommentaireService.js"></script>
 <script type="text/javascript" src="app/models/services/Calcul_posologieService.js"></script>
 <script type="text/javascript" src="app/models/services/InscriptionService.js"></script>
+<script type="text/javascript" src="app/models/services/CategorieService.js"></script>
 
 <!-- filter -->
 <script type="text/javascript" src="app/shared/filters/truncate.js"></script>

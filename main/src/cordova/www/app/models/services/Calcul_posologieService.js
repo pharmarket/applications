@@ -16,7 +16,7 @@ app.service('Calcul_posologieService', function($http, API_URL){
 
 		return $http({
 			method  : 'POST',
-			url    	: API_URL + 'contact',
+			url    	: API_URL + 'countPosologie',
 			headers: {'key': 'dragonteam'},
 			data    : params,
 			cache	: false

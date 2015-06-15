@@ -14,7 +14,7 @@ var app = angular.module('app', [
   * Constantes, configuration server(webservice)
   */
 /******* METTRE L ADRESSE FINAL DU SITE POUR MA PART J AI MIS LOCAL.DEV LE MODIFIER PAS SON LOCAL *******/
-app.constant('API_URL', 'http://localhost/site/public/ws/');
+app.constant('API_URL', 'http://local.dev/site/public/ws/');
 
 
 

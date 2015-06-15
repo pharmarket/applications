@@ -1,11 +1,11 @@
 'use strict';
 
-app.service('CgvService', function($http, API_URL){
+app.service('CategorieService', function($http, API_URL){
 
 	
 
 	/**
-	  * Get products by ID
+	  * Get categorie by ID
 	  * @param Object data Object JSON
 	  * @return HttpPromise
 	  */
@@ -13,7 +13,7 @@ app.service('CgvService', function($http, API_URL){
 		
 		return $http({
 			method	: 'GET',
-			url 	: API_URL + 'cgv',
+			url 	: API_URL + 'categorie',
 			headers: {'key': 'dragonteam'},
 			cache	: true
 		});

@@ -14,7 +14,18 @@ app.service('CommentaireService', function($http, API_URL){
 			url 	: API_URL + 'commentaire',
 			headers: {'key': 'dragonteam'},
 			cache	: true
-		});
+		})
+	}
+
+
+
+	function remove(id){
+
+		return $http({
+			method 	: 'DELETE',
+			url 	: API_URL + '/commentaire/' + id,
+			cache	: false 
+		})
 	}
 
 
@@ -23,6 +34,7 @@ app.service('CommentaireService', function($http, API_URL){
 
 
 	return ({
-		getAll 	: getAll
+		getAll 	: getAll,
+		remove  : remove
 	})
 });

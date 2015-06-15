@@ -23,19 +23,15 @@ app.config(function($routeProvider){
 		controller 	: 'ContactCtrl'
 	})
 
-
 	.when('/calcule_posologie', {
 		templateUrl : 'app/views/partials/calcul_posologie.html',
 		controller  : 'Calcul_posologieCtrl'
 	})
 
-
 	.when('/inscription', {
 		templateUrl : 'app/views/partials/inscription.html',
 		controller 	: 'InscriptionCtrl'
 	})
-
-
 
 	.when('/whoPharmarket', {
 		templateUrl : 'app/views/partials/whoPharmarket.html',
@@ -53,6 +49,11 @@ app.config(function($routeProvider){
 	})
 
 
+	.when('/commentaire/delete/:id', {
+		templateUrl : 'app/views/partials/list_commentaire.html',
+		controller  : 'List_Comment_DeleteProduitCtrl'
+	})
+
 	.when('/commentaire/list/:id', {
 		templateUrl : 'app/views/partials/list_commentaire.html',
 		controller  : 'List_Comment_ProduitCtrl'
@@ -64,8 +65,6 @@ app.config(function($routeProvider){
 		controller  : 'Comment_ProduitCtrl'
 	})
 
-
-
 	.when('/produit', {
 		templateUrl : 'app/views/partials/produit.html',
 		controller  : 'ProduitCtrl'
@@ -75,37 +74,11 @@ app.config(function($routeProvider){
 		templateUrl : 'app/views/partials/show_produit.html',
 		controller  : 'Show_ProduitCtrl' 
 	})
-	
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	.when('/categ', {
 		templateUrl : 'app/views/partials/categ.html',
-		controller  : 'ProduitCtrl'
+		controller  : 'CategorieSCtrl'
 	})
-
-	/*.when('/categ/:id', {
-		templateUrl : 'app/views/partials/produit.html',
-		controller  : 'ProduitCtrl'
-	})*/
-
-
-
-
-
 
 
 	.otherwise({
