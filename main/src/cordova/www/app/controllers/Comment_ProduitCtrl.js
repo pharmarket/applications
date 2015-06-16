@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('Comment_ProduitCtrl', function($scope, API_URL, CommentService){
+app.controller('Comment_ProduitCtrl', function($scope, $routeParams, API_URL, CommentService){
 	console.log('Comment_ProduitCtrl OK');
 
 	
@@ -9,7 +9,7 @@ app.controller('Comment_ProduitCtrl', function($scope, API_URL, CommentService){
 		var param = {
 			data : {
 				"user_id": 11,
-				"produit_id": 162,
+				"produit_id": $routeParams.id,
 				"nom": $scope.nom,
 				"description": $scope.description,
 				"note": $scope.note,
