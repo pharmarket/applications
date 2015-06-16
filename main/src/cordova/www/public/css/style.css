@@ -42,7 +42,6 @@ body {
 	-ms-transition:all .2s linear;
 }
 .header {
-	background:#BBD2E1;
 	padding:5px 0;
 }
 .header_top {
@@ -290,17 +289,17 @@ body {
 	font-size:20px;
 }
 .slider-text p{
-	color:#8fa7ae;
+	color:#425166;
 	font-size:13px;
 	margin:10px 0;
 	line-height:1.6em;
 }
 .slider-text a{
-	background:#8fa7ae;
+	background:#425166;
 	display:inline-block;
 	padding:8px 25px;
 	font-size:14px;
-	color:#323A45;
+	color:#FFF;
 	position:relative;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -309,7 +308,7 @@ body {
 }
 .slider-text a:hover{
 	color:#FFF;
-	background:#6C9BA9;
+	background:#78AB4E;
 }
 .slider-text a:after{
 	content:'';
