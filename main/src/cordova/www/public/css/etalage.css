@@ -1,14 +1,12 @@
 /*
- * Title: jQuery Etalage plugin CSS
- * Author: Berend de Jong, Frique
- * Author URI: http://www.frique.me/
- * Version: 1.3.1 (20120705.1)
- *
- * ------------------------------------ STYLE ------------------------------------
- * Edit this section to style your thumbnails, zoom area, magnifier etc.
- * If the id of your Etalage instance is different, do a find/replace on #etalage.
- * -------------------------------------------------------------------------------
- */
+* Title: jQuery Etalage plugin CSS
+* Version: 1.3.1 (20120705.1)
+*
+* ------------------------------------ STYLE ------------------------------------
+* Edit this section to style your thumbnails, zoom area, magnifier etc.
+* If the id of your Etalage instance is different, do a find/replace on #etalage.
+* -------------------------------------------------------------------------------
+*/
 
 /* Etalage container (large thumb + small thumbs): */
 #etalage{
@@ -86,15 +84,15 @@
 }
 
 /*
- * ------------------------------------ FUNCTIONALITY --------------------------------------
- * The following CSS serves to make Etalage function properly. Don't edit or edit carefully.
- * -----------------------------------------------------------------------------------------
- */
+* ------------------------------------ FUNCTIONALITY --------------------------------------
+* The following CSS serves to make Etalage function properly. Don't edit or edit carefully.
+* -----------------------------------------------------------------------------------------
+*/
 
 .etalage, .etalage_thumb, .etalage_thumb_image, .etalage_source_image, .etalage_zoom_preview, .etalage_icon, .etalage_hint{ display:none }
- .etalage_source_image{
- 	display:none !important;
- }
+.etalage_source_image{
+	display:none !important;
+}
 .etalage, .etalage ul, .etalage li, .etalage img, .etalage_hint, .etalage_icon, .etalage_description{ margin:0; padding:0; border:0; list-style:none }
 .etalage, .etalage_magnifier div, .etalage_magnifier div img, .etalage_small_thumbs ul, ul .etalage_small_thumbs li, .etalage_zoom_area div, .etalage_zoom_img{ position:relative }
 .etalage img, .etalage li{ -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -o-user-select:none; user-select:none; -webkit-user-drag:none; -moz-user-drag:none; user-drag:none }
@@ -127,6 +125,6 @@
 .etalage{ direction:ltr; }
 div.etalage_description{ position:absolute; bottom:0; left:0; z-index:999 }
 div.etalage_description.rtl{ direction:rtl; text-align:right }
- #etalage .etalage_thumb{
- 	width:100% !important;
- }
+#etalage .etalage_thumb{
+	width:100% !important;
+}
